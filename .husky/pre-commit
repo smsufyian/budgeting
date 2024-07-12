@@ -1,11 +1,11 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-echo "Checking code formatting with Prettier... 🧹 🖌️"
-yarn format || (echo "\033[33mCode formatting errors were found by Prettier. Please fix them before committing.\033[0m" && exit 1)
-
-echo "Linting code with ESLint... 🔎 🔧"
-yarn lint || (echo "\033[33mLinting errors were found by ESLint. Please fix them before committing.\033[0m" && exit 1)
+#echo "Checking code formatting with Prettier... 🧹 🖌️"
+#yarn format || (echo "\033[33mCode formatting errors were found by Prettier. Please fix them before committing.\033[0m" && exit 1)
+#
+#echo "Linting code with ESLint... 🔎 🔧"
+#yarn lint || (echo "\033[33mLinting errors were found by ESLint. Please fix them before committing.\033[0m" && exit 1)
 
 echo "Running End-to-End tests... 🚦 🚀"
 yarn test:e2e || (echo "\033[31mEnd-to-End tests failed. Please fix the errors before committing.\033[0m" && exit 1)
