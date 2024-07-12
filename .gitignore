@@ -42,3 +42,7 @@ next-env.d.ts
 
 # IntelliJ specific files
 .idea
+/test-results/
+/playwright-report/
+/blob-report/
+/playwright/.cache/
